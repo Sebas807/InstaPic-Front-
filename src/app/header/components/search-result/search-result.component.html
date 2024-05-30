@@ -1,0 +1,20 @@
+<section>
+  <section class="search-result" *ngFor="let item of searchResults">
+    <div clas="promo-section" *ngIf="item.isLowerPrice">
+      <span class="promo-label">Más económico</span>
+    </div>
+    <div class="flight-info">
+      <div class="flight-details">
+        <div class="duration-info">
+          <div>Duración</div>
+          <div>{{ item.duration }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+
+
+
